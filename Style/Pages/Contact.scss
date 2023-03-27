@@ -1,0 +1,118 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Fira Sans', sans-serif;
+    box-sizing: border-box;
+    background-color: black;
+    background-size: auto;
+}
+
+.head{
+    height: 100%;
+    width: 100%;
+    margin-top: 20px;
+
+    .logo-link{
+        text-decoration: none;
+    }
+
+        .logo{
+            font-weight: 700;
+            color: white;
+            font-size: 35px;
+            letter-spacing: 1px;
+              
+
+            .dev{
+                color: hsl(59, 88%, 51%);
+                transition: 1s;
+
+                &:hover{
+                    font-weight: bold;
+                    color: red;
+                }
+        }
+
+        }
+    
+
+    nav{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 45px;
+        padding-left: 8%;
+        padding-right: 5%;
+        color: white;
+
+        ul{ 
+            color: white;
+            text-decoration: none;
+            
+
+            li{
+                
+                list-style-type: none;
+                display: inline-block;
+                padding: 15px 45px;
+                
+                a{
+                    text-decoration: none;
+                    font-weight: bold;
+                    font-size: 20px;
+                    text-transform: capitalize;
+                    color: white;
+                    transition: 0.75s;
+
+                    &:hover{
+                        color: hsl(59, 88%, 51%);
+                        
+                    }
+
+                
+                }
+            }
+        }
+
+    }
+    
+
+}
+
+footer{ 
+    .social-media {
+        position: absolute;
+        transition: 2s;
+        text-decoration: none;
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        bottom: 50px;
+
+        a {
+            color: white;
+            
+            
+        }
+        i{
+            font-size: 30px;
+            transition: 2s;
+            
+            &:hover {
+                scale: 1.5;
+                color: #f0ec14;
+            }
+        }
+        .Copyright{
+            position: absolute;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            color: white;
+            margin-top: 50px;
+   
+           
+    }
+
+}
+}

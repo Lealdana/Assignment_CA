@@ -20,6 +20,9 @@ body {
   bottom: 0%;
   opacity: 0.2;
 }
+.boxing img {
+  border-radius: 30%;
+}
 
 .head {
   height: 100%;
@@ -330,4 +333,4 @@ footer .social-media .Copyright {
     position: absolute;
     bottom: 1%;
   }
-}/*# sourceMappingURL=About.css.map */
+}/*# sourceMappingURL=venezuela.css.map */

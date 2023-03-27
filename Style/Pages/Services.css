@@ -1,1 +1,89 @@
-/*# sourceMappingURL=Services.css.map */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Fira Sans", sans-serif;
+  box-sizing: border-box;
+  background-color: black;
+  background-size: auto;
+}
+
+.head {
+  height: 100%;
+  width: 100%;
+  margin-top: 20px;
+}
+.head .logo-link {
+  text-decoration: none;
+}
+.head .logo {
+  font-weight: 700;
+  color: white;
+  font-size: 35px;
+  letter-spacing: 1px;
+}
+.head .logo .dev {
+  color: hsl(59, 88%, 51%);
+  transition: 1s;
+}
+.head .logo .dev:hover {
+  font-weight: bold;
+  color: red;
+}
+.head nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 45px;
+  padding-left: 8%;
+  padding-right: 5%;
+  color: white;
+}
+.head nav ul {
+  color: white;
+  text-decoration: none;
+}
+.head nav ul li {
+  list-style-type: none;
+  display: inline-block;
+  padding: 15px 45px;
+}
+.head nav ul li a {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 20px;
+  text-transform: capitalize;
+  color: white;
+  transition: 0.75s;
+}
+.head nav ul li a:hover {
+  color: hsl(59, 88%, 51%);
+}
+
+footer .social-media {
+  position: absolute;
+  transition: 2s;
+  text-decoration: none;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  bottom: 50px;
+}
+footer .social-media a {
+  color: white;
+}
+footer .social-media i {
+  font-size: 30px;
+  transition: 2s;
+}
+footer .social-media i:hover {
+  scale: 1.5;
+  color: #f0ec14;
+}
+footer .social-media .Copyright {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  color: white;
+  margin-top: 50px;
+}/*# sourceMappingURL=Services.css.map */

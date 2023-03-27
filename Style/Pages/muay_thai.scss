@@ -17,10 +17,14 @@ body{
 .boxing {
     position: absolute;
     right: 1%;
-    border-radius: 60%;
-    border: 1px solid;
+    border-radius: 50%;
+    border: 1px solid white;
     bottom: 0%;
     opacity: 0.2;
+
+    img{
+        border-radius: 30%;
+    }
 }
 .head{
     height: 100%;

@@ -15,10 +15,13 @@ body {
 .boxing {
   position: absolute;
   right: 1%;
-  border-radius: 60%;
-  border: 1px solid;
+  border-radius: 50%;
+  border: 1px solid white;
   bottom: 0%;
   opacity: 0.2;
+}
+.boxing img {
+  border-radius: 30%;
 }
 
 .head {
@@ -330,4 +333,4 @@ footer .social-media .Copyright {
     position: absolute;
     bottom: 1%;
   }
-}/*# sourceMappingURL=About.css.map */
+}/*# sourceMappingURL=muay_thai.css.map */
