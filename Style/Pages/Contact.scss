@@ -2,21 +2,29 @@ body{
     margin: 0;
     padding: 0;
     font-family: 'Fira Sans', sans-serif;
-    box-sizing: border-box;
+    min-height: 96vh;    
     background-color: black;
     background-size: auto;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
 }
 
 .head{
     height: 100%;
     width: 100%;
     margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
 
     .logo-link{
         text-decoration: none;
     }
 
         .logo{
+            
             font-weight: 700;
             color: white;
             font-size: 35px;
@@ -79,15 +87,87 @@ body{
 
 }
 
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0px;
+
+    .Contact{
+        color: #f0ec14;
+        display: flex;
+        align-self: center;
+        justify-self: center;
+        font-size: 50px;
+        
+    }
+
+    .form-elements{
+        display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 24px;
+            margin-top: 10px;
+            width: 100%;
+            color: white;
+            padding: 10px 0px 15px 0px;
+
+            label {
+                font-size: 1em;
+                margin-bottom: 5px;
+
+            }
+
+            .form-input {
+                border-radius: 4px;
+                outline: none;
+                font-size: 1.2rem;
+                height: 2rem;
+                text-align: center;
+                &:focus {
+                    box-shadow: 1px 1px 5px 3px yellow
+            }
+
+            
+
+    }
+
+}
+
+.btn-div {
+    text-align: center;
+
+    #submit {
+        display: inline-block;
+        height: 40px;
+        min-width: 120px;
+        background-color: white;
+        color: black;
+        border-radius: 4px;
+        border: none;
+        outline:none;
+        font-size: 1.1rem;
+        margin-bottom: 10px;
+        transition: 1s;
+
+        &:hover {
+            cursor: pointer;
+            scale:1.1 ;
+        }
+    }
+}
+}
+
 footer{ 
     .social-media {
-        position: absolute;
+        position: relative;
         transition: 2s;
         text-decoration: none;
         display: flex;
         justify-content: space-around;
         width: 100%;
-        bottom: 50px;
+        bottom: 15px;
+        margin-top: 10px;
 
         a {
             color: white;
@@ -116,3 +196,269 @@ footer{
 
 }
 }
+
+
+// Responsive Website
+
+@media screen and (max-width: 600px) {
+    body{
+        min-height: 95vh;
+        position: relative;
+        box-sizing: border-box;
+    }
+    
+        .head{
+            height: 100%;
+            width:100%;
+            margin-top: 10px;
+            display: inline-block;
+            padding-left: 1%;
+            padding-right: 1%;
+            position: relative;
+            
+            
+        
+            .logo-link{
+                text-decoration: none;
+            
+            }
+        
+                .logo{
+                    font-weight: 700;
+                    color: white;
+                    font-size: 25px;
+                    letter-spacing:0.5px;
+                    
+                      
+        
+                    .dev{
+                        color: hsl(59, 88%, 51%);
+                        transition: 1s;
+        
+                        &:hover{
+                            font-weight: bold;
+                            color: red;
+                        }
+                }
+        
+                }
+                nav{
+                    display: flex;                
+                    text-align: center;
+                    justify-content: space-evenly;
+                    flex-direction: row;
+                    color: white;
+                    width: 80%;
+                    position: absolute;
+                    top: 30%;
+                                  
+                    
+                    
+                
+                    ul{ 
+                        color: white;
+                        text-decoration: none;
+                        flex-wrap: wrap;
+                        
+                                    
+                        li{
+                            
+                            list-style-type: none;
+                            padding: 10px 0px 0px 5px;
+                            
+                            
+                            a{
+                                text-decoration: none;
+                                                         
+                                text-transform: capitalize;
+                                color: white;
+                                transition: 0.75s;
+                                font-size: 15px;
+                                position: relative;
+                
+                                &:hover{
+                                    color: hsl(59, 88%, 51%);
+                                    
+                                    
+                                }
+                
+                            
+                            }
+                        }
+                    }
+                
+                }
+    }
+    
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+        margin-bottom: 1px;
+        position: absolute;
+        width: 100%;
+    
+        .Contact{
+            color: #f0ec14;
+            display: flex;
+            align-self: center;
+            justify-self: center;
+            font-size: 30px;
+            position: relative;
+            top: 100px;
+            
+        }
+    
+        .form-elements{
+            display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin-bottom: 2px;
+                margin-top: 1px;
+                width: 100%;
+                color: white;
+                padding: 10px 0px 15px 0px;
+                top: 80px;
+                position: relative;
+                
+    
+                label {
+                    font-size: 1em;
+                    margin-bottom: 5px;
+                    position: relative;
+                    
+    
+                }
+    
+                .form-input {
+                    
+                    border-radius: 4px;
+                    outline: none;
+                    font-size: 1.2rem;
+                    height: 1.5rem;
+                    text-align: center;
+                    &:focus {
+                        box-shadow: 1px 1px 5px 3px yellow
+                }
+    
+                
+    
+        }
+    
+    }
+    
+    
+    }
+    .btn-div {
+        text-align: center;
+        position: relative;
+        width: 100%;
+        margin-top: 40%;
+    
+    
+        #submit {
+           
+            height: 30px;
+            min-width: 120px;
+            background-color: white;
+            color: black;
+            border-radius: 4px;
+            border: none;
+            outline:none;
+            font-size: 1.1rem;
+            margin-bottom: 0px;
+            transition: 1s;
+            
+            
+    
+            &:hover {
+                cursor: pointer;
+                scale:1.1 ;
+            }
+        }
+    }
+}
+
+        
+@media screen and (max-width: 1025px) and (min-width: 601px) {
+        body{
+            min-height: 95vh;
+            position: relative;
+        }
+        
+            .head{
+                height: 100%;
+                width: 100%;
+                margin-top: 20px;
+                display: inline-block;
+                margin-left: 50px;
+                
+            
+                .logo-link{
+                    text-decoration: none;
+                }
+            
+                    .logo{
+                        font-weight: 700;
+                        color: white;
+                        font-size: 25px;
+                        letter-spacing:0.5px;
+                        
+                          
+            
+                        .dev{
+                            color: hsl(59, 88%, 51%);
+                            transition: 1s;
+            
+                            &:hover{
+                                font-weight: bold;
+                                color: red;
+                            }
+                    }
+            
+                    }
+                    nav{
+                        display: flex;
+                        justify-content: space-around;
+                        padding-left: 10%;
+                        padding-right: 10%;
+                        color: white;
+                        
+                    
+                        ul{ 
+                            color: white;
+                            text-decoration: none;
+                            font-size: 20px;
+                            flex-wrap: wrap;
+                            
+                                        
+                            li{
+                                
+                                list-style-type: none;
+                                
+                                padding: 5px 8px;
+                                
+                                
+                                a{
+                                    text-decoration: none;
+                                    font-weight: bold;                            
+                                    text-transform: capitalize;
+                                    color: white;
+                                    transition: 0.75s;
+                                    font-size: 20px;
+                    
+                                    &:hover{
+                                        color: hsl(59, 88%, 51%);
+                                        
+                                        
+                                    }
+                    
+                                
+                                }
+                            }
+                        }
+                    
+                    }
+        }
+    }

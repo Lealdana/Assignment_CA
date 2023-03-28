@@ -285,8 +285,8 @@ footer .social-media .Copyright {
     width: 100%;
     margin-top: 10px;
     display: inline-block;
-    padding-left: 5%;
-    padding-right: 5%;
+    padding-left: 1%;
+    padding-right: 1%;
     position: relative;
   }
   .head .logo-link {
@@ -323,14 +323,14 @@ footer .social-media .Copyright {
   }
   .head nav ul li {
     list-style-type: none;
-    padding: 5px 0px 0px 5px;
+    padding: 10px 0px 0px 5px;
   }
   .head nav ul li a {
     text-decoration: none;
     text-transform: capitalize;
     color: white;
     transition: 0.75s;
-    font-size: 16px;
+    font-size: 15px;
     position: relative;
   }
   .head nav ul li a:hover {
@@ -343,9 +343,9 @@ footer .social-media .Copyright {
     background-color: rgb(255, 255, 255);
     border-radius: 10%;
     box-shadow: 3px 3px #f01414;
-    display: flex;
+    display: block;
     margin-left: 30%;
-    margin-top: 18%;
+    margin-top: 25%;
     position: fixed;
     font-size: 15px;
   }
@@ -356,7 +356,7 @@ footer .social-media .Copyright {
   }
   .name {
     position: absolute;
-    top: 25%;
+    top: 20%;
     left: 20%;
     transform: translateY(-50);
   }
