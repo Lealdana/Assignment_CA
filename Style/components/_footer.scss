@@ -1,0 +1,38 @@
+footer{ 
+    .social-media {
+        transition: 2s;
+        text-decoration: none;
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+
+        
+              
+        
+        
+        a {
+            color: white;
+            
+            
+        }
+        i{
+            font-size: 30px;
+            transition: 2s;
+            
+            
+            &:hover {
+                scale: 1.5;
+                color: $primary-color;
+            }
+        }
+        .Copyright{
+            position: absolute;
+            color: white;
+            margin-top: 50px;
+            margin-bottom: 60px;
+   
+           
+    }
+
+}
+}

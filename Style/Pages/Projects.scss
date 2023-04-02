@@ -1,93 +1,7 @@
-body{
-    margin: 0;
-    padding: 0;
-    font-family: 'Fira Sans', sans-serif;
-    box-sizing: border-box;
-    background-color: black;
-    background-size: auto;
-    position: relative;
-    min-height: 95vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    
-}
-
-
-
-.head{
-    height: 100%;
-    width: 100%;
-    margin-top: 20px;
-    display: flex;
-    justify-content: space-around;
-
-    .logo-link{
-        text-decoration: none;
-    }
-
-        .logo{
-            font-weight: 700;
-            color: white;
-            font-size: 35px;
-            letter-spacing: 1px;
-            padding: 15px 45px;
-              
-
-            .dev{
-                color: hsl(59, 88%, 51%);
-                transition: 1s;
-
-                &:hover{
-                    font-weight: bold;
-                    color: red;
-                }
-        }
-
-        }
-    
-    }
-
-    nav{
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        
-        padding-left: 8%;
-        padding-right: 5%;
-        color: white;
-
-        ul{ 
-            color: white;
-            text-decoration: none;
-            
-
-            li{
-                
-                list-style-type: none;
-                display: inline-block;
-                padding: 15px 45px;
-                
-                a{
-                    text-decoration: none;
-                    font-weight: bold;
-                    font-size: 20px;
-                    text-transform: capitalize;
-                    color: white;
-                    transition: 0.75s;
-
-                    &:hover{
-                        color: hsl(59, 88%, 51%);
-                        
-                        
-                    }
-
-                
-                }
-            }
-        }
-
-    }
+@import "../defaults/color.scss";
+@import "../components/header";
+@import "../components/footer";
+@import "../components/body";
 
 
 main { 
@@ -99,11 +13,9 @@ main {
         width: 500x;
         height: 500px;
         position: relative;        
-        border: 3px solid black;
-        // box-shadow: 8px 10px 20px rgba(246, 250, 6, 0.555);
+        border: 3px solid black;        
         border-radius: 10px;
-        overflow: hidden;
-        // margin: 10px;
+        overflow: hidden;       
         padding: 20px;
         background-color: rgb(0, 0, 0);
         text-align: center;
@@ -119,7 +31,7 @@ main {
                 }
 
                 h3{
-                    color: #f0ec14;
+                    color: $primary-color;
                 }
             }
 
@@ -140,53 +52,7 @@ main {
         }
     }
     
-    // @media screen and {min-width: 600px;{
-    //     main {
-    //         justify-content: space-around;
-        
-
-        footer{ 
-            .social-media {
-                transition: 2s;
-                text-decoration: none;
-                display: flex;
-                justify-content: space-around;
-                width: 100%;
-        
-                
-                
-                
-                
-                
-                a {
-                    color: white;
-                    
-                    
-                }
-                i{
-                    font-size: 30px;
-                    transition: 2s;
-                    
-                    
-                    &:hover {
-                        scale: 1.5;
-                        color: #f0ec14;
-                    }
-                }
-                .Copyright{
-                    position: absolute;
-                    display: flex;
-                    justify-content: center;
-                    color: white;
-                    margin-top: 50px;
-                    margin-bottom: 60px;
-           
-                   
-            }
-        
-        }
-        }
-
+   
         // Responsive Website
 
         @media screen and (max-width: 600px) {
@@ -220,12 +86,12 @@ main {
                               
                 
                             .dev{
-                                color: hsl(59, 88%, 51%);
+                                color: $primary-color;
                                 transition: 1s;
                 
                                 &:hover{
                                     font-weight: bold;
-                                    color: red;
+                                    color: $secondary-color;
                                 }
                         }
                 
@@ -265,7 +131,7 @@ main {
                                         position: relative;
                         
                                         &:hover{
-                                            color: hsl(59, 88%, 51%);
+                                            color: $primary-color;
                                             
                                             
                                         }
@@ -305,12 +171,12 @@ main {
                               
                 
                             .dev{
-                                color: hsl(59, 88%, 51%);
+                                color: $secondary-color;
                                 transition: 1s;
                 
                                 &:hover{
                                     font-weight: bold;
-                                    color: red;
+                                    color: $primary-color;
                                 }
                         }
                 
@@ -346,7 +212,7 @@ main {
                                         font-size: 20px;
                         
                                         &:hover{
-                                            color: hsl(59, 88%, 51%);
+                                            color: $primary-color;
                                             
                                             
                                         }

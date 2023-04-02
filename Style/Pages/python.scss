@@ -1,18 +1,8 @@
-body{
-    margin: 0;
-    padding: 0;
-    font-family: 'Fira Sans', sans-serif;
-    min-height: 95vh;    
-    background-color: black;
-    background-size: auto;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    box-sizing: border-box;
-    
-    
-}
+@import "../defaults/color.scss";
+@import "../components/header";
+@import "../components/footer";
+@import "../components/body";
+
 
 .boxing {
     position: absolute;
@@ -22,79 +12,6 @@ body{
     bottom: 0%;
     opacity: 0.2;
 }
-.head{
-    height: 100%;
-    width: 100%;
-    margin-top: 20px;
-    display: flex;
-    justify-content: space-around;
-
-    .logo-link{
-        text-decoration: none;
-    }
-
-        .logo{
-            font-weight: 700;
-            color: white;
-            font-size: 35px;
-            letter-spacing: 1px;
-            padding: 15px 45px;
-              
-
-            .dev{
-                color: hsl(59, 88%, 51%);
-                transition: 1s;
-
-                &:hover{
-                    font-weight: bold;
-                    color: red;
-                }
-        }
-
-        }
-    
-    }
-
-    nav{
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        
-        padding-left: 8%;
-        padding-right: 5%;
-        color: white;
-
-        ul{ 
-            color: white;
-            text-decoration: none;
-            
-
-            li{
-                
-                list-style-type: none;
-                display: inline-block;
-                padding: 15px 45px;
-                
-                a{
-                    text-decoration: none;
-                    font-weight: bold;
-                    font-size: 20px;
-                    text-transform: capitalize;
-                    color: white;
-                    transition: 0.75s;
-
-                    &:hover{
-                        color: hsl(59, 88%, 51%);
-                        
-                        
-                    }
-
-                
-                }
-            }
-        }
-
-    }
 
 
 .me-title { 
@@ -103,7 +20,7 @@ body{
     position: absolute;
     
     .wai {
-        color: #f0ec14;
+        color: $primary-color;
         letter-spacing: 2px;
         animation: grow 1s infinite;
         transition: 1s;
@@ -133,7 +50,7 @@ body{
         transition: 1s;
 
         &:hover {
-            border: 5px solid #f0ec14;
+            border: 5px solid $primary-color;
         }
     }    
 }
@@ -156,81 +73,11 @@ body{
     h2{
         font-size: 25px;
         color: #f0ec14;
-        text-shadow: 1px 1px 1px red;
+        text-shadow: 1px 1px 1px $secondary-color;
     }
 
 }
 
-   
-
-   
-    
-
-    @keyframes chef {
-        0% {transform: rotate(-30deg)}
-        30% {transform: rotate(30deg)}
-        50% {transform: rotate(-15deg)}
-        75% {transform: rotate(15deg)}
-        100% {transform: rotate(0)}
-    }
-    
-    
-    
-    
-
-        
-         
-    
-
-
-    
-    
-
-
-
-
-
-footer{ 
-    .social-media {
-        transition: 2s;
-        text-decoration: none;
-        display: flex;
-        justify-content: space-around;
-        width: 100%;
-
-        
-        
-        
-        
-        
-        a {
-            color: white;
-            
-            
-        }
-        i{
-            font-size: 30px;
-            transition: 2s;
-            
-            
-            &:hover {
-                scale: 1.5;
-                color: #f0ec14;
-            }
-        }
-        .Copyright{
-            position: absolute;
-            display: flex;
-            justify-content: center;
-            color: white;
-            margin-top: 50px;
-            margin-bottom: 60px;
-   
-           
-    }
-
-}
-}
 
 
 // Responsive Website
@@ -263,12 +110,12 @@ footer{
                       
         
                     .dev{
-                        color: hsl(59, 88%, 51%);
+                        color: $primary-color;
                         transition: 1s;
         
                         &:hover{
                             font-weight: bold;
-                            color: red;
+                            color: $secondary-color;
                         }
                 }
         
@@ -305,7 +152,7 @@ footer{
                                 position: relative;
                 
                                 &:hover{
-                                    color: hsl(59, 88%, 51%);
+                                    color: $primary-color;
                                     
                                     
                                 }
@@ -373,12 +220,12 @@ main{
                       
         
                     .dev{
-                        color: hsl(59, 88%, 51%);
+                        color: $primary-color;
                         transition: 1s;
         
                         &:hover{
                             font-weight: bold;
-                            color: red;
+                            color: $secondary-color;
                         }
                 }
         
@@ -414,7 +261,7 @@ main{
                                 font-size: 20px;
                 
                                 &:hover{
-                                    color: hsl(59, 88%, 51%);
+                                    color: $primary-color;
                                     
                                     
                                 }
@@ -437,7 +284,7 @@ main{
             display: inline-block;        
             position: relative;
             margin-top: 20%;
-            margin-left: 10%;
+            margin-left: 25%;
             
         }
     

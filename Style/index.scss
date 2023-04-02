@@ -1,91 +1,7 @@
-body{
-    margin: 0;
-    padding: 0;
-    font-family: 'Fira Sans', sans-serif;
-    min-height: 96vh;    
-    background-color: black;
-    background-size: auto;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    
-}
-
-.head{
-    height: 100%;
-    width: 100%;
-    margin-top: 20px;
-    display: flex;
-    justify-content: space-around;
-
-    .logo-link{
-        text-decoration: none;
-    }
-
-        .logo{
-            font-weight: 700;
-            color: white;
-            font-size: 35px;
-            letter-spacing: 1px;
-            padding: 15px 45px;
-              
-
-            .dev{
-                color: hsl(59, 88%, 51%);
-                transition: 1s;
-
-                &:hover{
-                    font-weight: bold;
-                    color: red;
-                }
-        }
-
-        }
-    
-    }
-
-    nav{
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        
-        padding-left: 8%;
-        padding-right: 5%;
-        color: white;
-
-        ul{ 
-            color: white;
-            text-decoration: none;
-            
-
-            li{
-                
-                list-style-type: none;
-                display: inline-block;
-                padding: 15px 45px;
-                
-                a{
-                    text-decoration: none;
-                    font-weight: bold;
-                    font-size: 20px;
-                    text-transform: capitalize;
-                    color: white;
-                    transition: 0.75s;
-
-                    &:hover{
-                        color: hsl(59, 88%, 51%);
-                        
-                        
-                    }
-
-                
-                }
-            }
-        }
-
-    }
-    
+@import "./defaults/color.scss";
+@import "./components/header";
+@import "./components/footer";
+@import "./components/body";
 
 
 
@@ -95,7 +11,7 @@ body{
     padding: 10px 18px;
     background-color: rgb(255, 255, 255);
     border-radius: 10%;
-    box-shadow: 3px 3px #f01414;
+    box-shadow: 3px 3px $secondary-color;
     margin-left: 30%;
     margin-top: 15%;
     position: relative;
@@ -159,7 +75,7 @@ body{
         height: 0;
         border: 150px solid transparent;
         border-top: 0;
-        border-bottom: 300px solid #f0ec14;
+        border-bottom: 300px solid $primary-color;
         right: 20%;
         top: 40%;
         position: fixed;
@@ -180,7 +96,7 @@ body{
         height: 200px;
         width: 200px;
         border: solid rgb(0, 0, 0);
-        background-color: #f0ec14;
+        background-color: $primary-color;
         position: fixed;
         right: 22%;
         top: 45%;
@@ -198,7 +114,7 @@ body{
         height: 250px;
         width: 250px;
         border: 5px solid rgb(32, 29, 29);
-        background-color: #f0ec14;
+        background-color: $primary-color;
         position: fixed;
         right: 21%;
         top: 44%;
@@ -207,7 +123,7 @@ body{
         opacity: 0.3;
 
         &:hover {
-            background-color: red;
+            background-color: $secondary-color;
         }
 
     }
@@ -231,7 +147,7 @@ h1{
     font-size: 75px;
 
     .Aldana{
-        color: #f0ec14;
+        color: $primary-color;
         text-decoration: none;
         transition: 1s;
 
@@ -253,44 +169,44 @@ h3{
 
 // Footer
 
-footer{ 
-    .social-media {
-        transition: 2s;
-        text-decoration: none;
-        display: flex;
-        justify-content: space-around;
-        width: 100%;
+// footer{ 
+//     .social-media {
+//         transition: 2s;
+//         text-decoration: none;
+//         display: flex;
+//         justify-content: space-around;
+//         width: 100%;
 
         
               
         
         
-        a {
-            color: white;
+//         a {
+//             color: white;
             
             
-        }
-        i{
-            font-size: 30px;
-            transition: 2s;
+//         }
+//         i{
+//             font-size: 30px;
+//             transition: 2s;
             
             
-            &:hover {
-                scale: 1.5;
-                color: #f0ec14;
-            }
-        }
-        .Copyright{
-            position: absolute;
-            color: white;
-            margin-top: 50px;
-            margin-bottom: 60px;
+//             &:hover {
+//                 scale: 1.5;
+//                 color: $primary-color;
+//             }
+//         }
+//         .Copyright{
+//             position: absolute;
+//             color: white;
+//             margin-top: 50px;
+//             margin-bottom: 60px;
    
            
-    }
+//     }
 
-}
-}
+// }
+// }
 
 // Responsive Website
 
@@ -298,6 +214,9 @@ footer{
 body{
     min-height: 95vh;
     position: relative;
+    height: 100%;
+    width: 100%;
+    padding: 0px;
 }
 
     .head{
@@ -324,12 +243,12 @@ body{
                   
     
                 .dev{
-                    color: hsl(59, 88%, 51%);
+                    color: $primary-color;
                     transition: 1s;
     
                     &:hover{
                         font-weight: bold;
-                        color: red;
+                        color: $secondary-color;
                     }
             }
     
@@ -369,7 +288,7 @@ body{
                             position: relative;
             
                             &:hover{
-                                color: hsl(59, 88%, 51%);
+                                color: $primary-color;
                                 
                                 
                             }
@@ -388,10 +307,10 @@ body{
     padding: 10px 18px;
     background-color: rgb(255, 255, 255);
     border-radius: 10%;
-    box-shadow: 3px 3px #f01414;
+    box-shadow: 3px 3px $secondary-color;
     display: block;
     margin-left: 30%;
-    margin-top: 40%;
+    margin-top: 60%;
     position: relative;
     font-size: 15px;
     
@@ -424,12 +343,12 @@ h1{
     font-size: 75px;
 
     .Aldana{
-        color: #f0ec14;
+        color: $primary-color;
         text-decoration: none;
         transition: 1s;
 
         &:hover {
-            color: red;
+            color: $secondary-color;
         }
     }
 }
@@ -476,12 +395,12 @@ h3{
                       
         
                     .dev{
-                        color: hsl(59, 88%, 51%);
+                        color: $primary-color;
                         transition: 1s;
         
                         &:hover{
                             font-weight: bold;
-                            color: red;
+                            color: $secondary-color;
                         }
                 }
         
@@ -517,7 +436,7 @@ h3{
                                 font-size: 20px;
                 
                                 &:hover{
-                                    color: hsl(59, 88%, 51%);
+                                    color: $primary-color;
                                     
                                     
                                 }
@@ -536,7 +455,7 @@ h3{
         padding: 10px 18px;
         background-color: rgb(255, 255, 255);
         border-radius: 10%;
-        box-shadow: 3px 3px #f01414;
+        box-shadow: 3px 3px $secondary-color;
         margin-top: 10%;
         position: relative;
         
@@ -569,12 +488,12 @@ h3{
         font-size: 80px;
     
         .Aldana{
-            color: #f0ec14;
+            color: $primary-color;
             text-decoration: none;
             transition: 1s;
     
             &:hover {
-                color: red;
+                color: $secondary-color;
             }
         }
     }
@@ -600,7 +519,7 @@ h3{
             padding: 10px 18px;
             background-color: rgb(255, 255, 255);
             border-radius: 10%;
-            box-shadow: 3px 3px #f01414;
+            box-shadow: 3px 3px $secondary-color;
                       
             margin-left: 30%;
             margin-top: 25%;
